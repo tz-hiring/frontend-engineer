@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        custom: ["MyCustomFont", "sans-serif"],
+        custom: ["GoodSans", "sans-serif"],
       },
     },
   },
