@@ -37,7 +37,7 @@ Please go to the **Assessment** page in the Figma link above. The assessment con
 
 **Step 3**: Observe the **Like** icon with a count at the bottom of the component. Step 3 is to implement a Click interaction such that the like count is incremented by one and the the colour changes to red (per the design). Clicking on it again should decrement the like count and remove the applied colour.
 
-**Step 4**: On clicking the card, it should open [`transitionzero.org`](http://transitionzero.org) in a new tab. [!TIP] Pay attention to accessibility.
+**Step 4**: On clicking the card, it should open [`transitionzero.org`](http://transitionzero.org) in a new tab. (**HINT:** Pay attention to accessibility).
 
 **Step 5 (Bonus)**: Per the design, add a fancy improvement to the style of the focus state.
 
