@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'GoodSans';
+  src: url('/fonts/GoodSans-Regular.otf') format('otf'),
+       url('/fonts/GoodSans-Regular.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GoodSans';
+  src: url('/fonts/GoodSans-Medium.otf') format('otf'),
+       url('/fonts/GoodSans-Medium.otf') format('otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
