@@ -1,65 +1,46 @@
-Technical Assessment: Card Component Implementation
-Overview
-Welcome to the technical assessment for the Design Engineer / Frontend Engineer position. The task is to build a card component based on the Figma design provided. This assessment will test your attention to detail, semantic HTML usage, CSS proficiency, and adherence to best practices.
+# Technical Assessment: Card Component Implementation
 
-Task Description
-You will build a card component following the Figma design we have provided. The minimum requirement is to create a static card as per the design. Additionally, there are three enhancement levels to further demonstrate your skills.
+## Overview
+Welcome to the technical assessment for the  Frontend Engineer (design focus) position. The task is to build a `Card` component based on the Figma design provided. This assessment will test your attention to detail, semantic HTML usage, CSS proficiency, and adherence to best practices.
 
-Requirements
-Minimum Requirement
-Build the Card: Use the provided Figma design to create a static card component.
-Enhancement Levels
-Level 1: Interactivity
+The repository has been set up with all the assets and tooling you'll need to complete the assessment. 
 
-Make the card interactive on hover and focus.
-Add appropriate hover and focus styles.
-Level 2: Clickable Love Heart Icon
+ We advise you take the first few minutes to read the instructions and go through the Figma files, especially if you are not very familiar with the tool.
 
-Make the love heart icon clickable.
-On click, increment the count value next to the icon.
-Change the love heart icon color to red when clicked.
-Level 3: Clickable Card
+ **Time allocated**: 1 hour 30 minutes 
 
-Make the entire card clickable.
-The card should link to a blog post URL when clicked.
-Instructions
-Attention to Detail:
+**Figma:** [Frontend Engineer Assessment - Design](https://www.figma.com/design/Fe8lmciEWMnjq5Auyg4H9k/FE-Assessment?node-id=5-16&t=b9lSbNpnNy92yPTH-1)
 
-Ensure your card matches the Figma design as closely as possible.
-Pay attention to spacing, fonts, colors, and alignment.
-Semantic HTML:
+**Code:** [Frontend Engineer Assessment - Code](https://github.com/transition-zero/FE-engineer-design-technical)
 
-Use appropriate HTML elements to ensure the card is semantically correct.
-CSS Proficiency:
+## Getting Started
 
-Write clean and efficient CSS.
-Use classes and IDs appropriately.
-Follow best practices for styling.
-Best Practices:
+The repository provided contains the following pre-installed and configured:
 
-Ensure your code is readable and maintainable.
-Include comments where necessary.
-Follow modern best practices for HTML, CSS, and JavaScript.
-Submission
-Files:
+- React
+- TypeScript
+- Tailwind CSS
+- CSS Modules
+- All assets in the design
+- [IBM UI icons library](https://www.ibm.com/design/language/iconography/ui-icons/library/)
 
-HTML file(s)
-CSS file(s)
-JavaScript file(s) (if any)
-Any additional files required for your implementation
-Instructions:
+Whilst we have done this to help you dive straight into the assessment, we encourage you to use whatever tooling or stack you feel most comfortable with.
 
-Provide clear instructions on how to run and test your code.
-Include any assumptions or decisions made during the implementation.
-Evaluation Criteria
-Attention to Detail: How closely the card matches the provided Figma design.
-Semantic HTML: Use of appropriate HTML elements.
-CSS Proficiency: Quality and efficiency of the CSS code.
-Best Practices: Overall code quality, readability, and maintainability.
-Figma Design
-You can find the Figma design link in the email or document provided.
+ If you have any questions or need further clarification, feel free to reach out to us.  Have fun and good luck!
 
-Good Luck!
-We look forward to seeing your implementation. Good luck and happy coding!
+## Instructions
+Please go to the **Assessment** page in the Figma link above. The assessment contains 5 steps, each with an increasing level of complexity. Please note we are only concerned with the `Card` component. 
 
-Note: If you have any questions or need further clarification, feel free to reach out to us.
+**Step 1**: Build the `Card` as specified in the design.
+
+**Step 2**:  Add hover and focus states to the `Card` component built in Step 1. Step 2 contains two designs, the first one representing the hover state and the second representing the focus state.
+
+**Step 3**: Observe the **Like** icon with a count at the bottom of the component. Step 3 is to implement a Click interaction such that the like count is incremented by one and the the colour changes to red (per the design). Clicking on it again should decrement the like count and remove the applied colour.
+
+**Step 4**: On clicking the card, it should open [`transitionzero.org`](http://transitionzero.org) in a new tab. [!TIP] Pay attention to accessibility.
+
+**Step 5 (Bonus)**: Per the design, add a fancy improvement to the style of the focus state.
+
+## Submission
+
+Please refer to the email for submission instructions.
