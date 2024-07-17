@@ -11,8 +11,6 @@ The repository has been set up with all the assets and tooling you'll need to co
 
 **Figma:** [Frontend Engineer Assessment - Design](https://www.figma.com/design/Fe8lmciEWMnjq5Auyg4H9k/FE-Assessment?node-id=5-16&t=b9lSbNpnNy92yPTH-1)
 
-**Code:** [Frontend Engineer Assessment - Code](https://github.com/transition-zero/FE-engineer-design-technical)
-
 ## Getting Started
 
 The repository provided contains the following pre-installed and configured:
