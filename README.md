@@ -13,6 +13,16 @@ The repository has been set up with all the assets and tooling you'll need to co
 
 ## Getting Started
 
+To install package dependencies:
+```
+npm install
+```
+
+To run the local dev server:
+```
+npm run dev
+```
+
 The repository provided contains the following pre-installed and configured:
 
 - React
