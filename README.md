@@ -27,7 +27,7 @@ Whilst we have done this to help you dive straight into the assessment, we encou
  If you have any questions or need further clarification, feel free to reach out to us.  Have fun and good luck!
 
 ## Instructions
-Please go to the **Assessment** page in the Figma link above. The assessment contains 5 steps, each with an increasing level of complexity. Please note we are only concerned with the `Card` component. 
+Please go to the **Assessment** page in the Figma link above. The assessment contains 5 steps, each with an increasing level of complexity. The first step is mandatory; you may choose which (if any) of the optional tasks to complete if you have additional time after completing this step. Please note we are only concerned with the `Card` component. 
 
 **1. Mandatory Task**: Build the `Card` as specified in the design.
 
