@@ -29,15 +29,15 @@ Whilst we have done this to help you dive straight into the assessment, we encou
 ## Instructions
 Please go to the **Assessment** page in the Figma link above. The assessment contains 5 steps, each with an increasing level of complexity. Please note we are only concerned with the `Card` component. 
 
-**Step 1**: Build the `Card` as specified in the design.
+**1. Mandatory Task**: Build the `Card` as specified in the design.
 
-**Step 2**:  Add hover and focus states to the `Card` component built in Step 1. Step 2 contains two designs, the first one representing the hover state and the second representing the focus state.
+**2. Optional Task**:  Add hover and focus states to the `Card` component built in Step 1. Step 2 contains two designs, the first one representing the hover state and the second representing the focus state.
 
-**Step 3**: Observe the **Like** icon with a count at the bottom of the component. Step 3 is to implement a Click interaction such that the like count is incremented by one and the the colour changes to red (per the design). Clicking on it again should decrement the like count and remove the applied colour.
+**3. Optional Task**: Observe the **Like** icon with a count at the bottom of the component. Step 3 is to implement a Click interaction such that the like count is incremented by one and the the colour changes to red (per the design). Clicking on it again should decrement the like count and remove the applied colour.
 
-**Step 4**: On clicking the card, it should open [`transitionzero.org`](http://transitionzero.org) in a new tab. (**HINT:** Pay attention to accessibility).
+**4. Optional Task**: On clicking the card, it should open [`transitionzero.org`](http://transitionzero.org) in a new tab. (**HINT:** Pay attention to accessibility).
 
-**Step 5 (Bonus)**: Per the design, add a fancy improvement to the style of the focus state.
+**5. Optional Task**: Per the design, add a fancy improvement to the style of the focus state.
 
 ## Submission
 
