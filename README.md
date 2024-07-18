@@ -39,16 +39,16 @@ Whilst we have done this to help you dive straight into the assessment, we encou
 ## Instructions
 Please go to the **Assessment** page in the Figma link above. The assessment contains 5 steps, each with an increasing level of complexity. The first step is mandatory; you may choose which (if any) of the optional tasks to complete if you have additional time after completing this step. Please note we are only concerned with the `Card` component. 
 
-**1. Mandatory Task**: Build the `Card` as specified in the design.
+**Step 1 (Mandatory)**. Build the `Card` as specified in the design.
 
-**2. Optional Task**:  Add hover and focus states to the `Card` component built in Step 1. Step 2 contains two designs, the first one representing the hover state and the second representing the focus state.
+**Step 2 (Optional)**.  Add hover and focus states to the `Card` component built in Step 1. Step 2 contains two designs, the first one representing the hover state and the second representing the focus state.
 
-**3. Optional Task**: Observe the **Like** icon with a count at the bottom of the component. Step 3 is to implement a Click interaction such that the like count is incremented by one and the the colour changes to red (per the design). Clicking on it again should decrement the like count and remove the applied colour.
+**Step 3 (Optional)**. Observe the **Like** icon with a count at the bottom of the component. Step 3 is to implement a Click interaction such that the like count is incremented by one and the the colour changes to red (per the design). Clicking on it again should decrement the like count and remove the applied colour.
 
-**4. Optional Task**: On clicking the card, it should open [`transitionzero.org`](http://transitionzero.org) in a new tab. (**HINT:** Pay attention to accessibility).
+**Step 4 (Optional)**. On clicking the card, it should open [`transitionzero.org`](http://transitionzero.org) in a new tab. (**HINT:** Pay attention to accessibility).
 
-**5. Optional Task**: Per the design, add the gradient to the focus state of the card.
+**Step 5 (Optional)**. Per the design, add the gradient to the focus state of the card.
 
 ## Submission
 
-Please refer to the email for submission instructions.
+Please commit your code and push it to this repo in a new Pull Request.
