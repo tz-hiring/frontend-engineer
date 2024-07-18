@@ -19,7 +19,7 @@ The repository provided contains the following pre-installed and configured:
 - TypeScript
 - Tailwind CSS
 - CSS Modules
-- All assets in the design
+- All assets needed for the design in the `/public` folder
 - [IBM UI icons library](https://www.ibm.com/design/language/iconography/ui-icons/library/)
 
 Whilst we have done this to help you dive straight into the assessment, we encourage you to use whatever tooling or stack you feel most comfortable with.
@@ -37,7 +37,7 @@ Please go to the **Assessment** page in the Figma link above. The assessment con
 
 **4. Optional Task**: On clicking the card, it should open [`transitionzero.org`](http://transitionzero.org) in a new tab. (**HINT:** Pay attention to accessibility).
 
-**5. Optional Task**: Per the design, add a fancy improvement to the style of the focus state.
+**5. Optional Task**: Per the design, add the gradient to the focus state of the card.
 
 ## Submission
 
