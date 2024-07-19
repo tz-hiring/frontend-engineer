@@ -4,15 +4,15 @@
 
 @font-face {
   font-family: 'GoodSans';
-  src: url('/fonts/GoodSans-Regular.otf') format('otf');
-  font-weight: normal;
+  src: url('/fonts/GoodSans-Regular.otf') format('opentype');
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'GoodSans';
-  src: url('/fonts/GoodSans-RegularItalic.otf') format('otf');
-  font-weight: normal;
+  src: url('/fonts/GoodSans-RegularItalic.otf') format('opentype');
+  font-weight: 400;
   font-style: italic;
 }
 
