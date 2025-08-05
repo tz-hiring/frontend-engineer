@@ -1,54 +1,61 @@
-# Technical Assessment: Card Component Implementation
+# Frontend Engineering Exercise
 
-## Overview
-Welcome to the technical assessment for the  Frontend Engineer (design focus) position. The task is to build a `Card` component based on the Figma design provided. This assessment will test your attention to detail, semantic HTML usage, CSS proficiency, and adherence to best practices.
+## Table of Contents
+- [The Brief](#the-brief)
+- [Requirements](#requirements)
+- [Optional Enhancements](#optional-enhancements)
+- [Time & Submission](#time--submission)
+- [Getting Started](#getting-started)
+- [Data](#data)
 
-The repository has been set up with all the assets and tooling you'll need to complete the assessment. 
+## The Brief
 
- We advise you take the first few minutes to read the instructions and go through the Figma files, especially if you are not very familiar with the tool.
+Build a web-based charting interface for an energy analyst to visualize hourly energy generation data for 2030.
 
- **Time allocated**: 1 hour 30 minutes 
+**Data Structure:**
+- Rows: Technology carriers (Solar, Wind, Gas, etc.)
+- Columns: Hourly timestamps (Jan 1 - Dec 31, 2030)
+- Values: Energy generation in MW
 
-**Figma:** [Frontend Engineer Assessment - Design](https://www.figma.com/design/Fe8lmciEWMnjq5Auyg4H9k/FE-Assessment?node-id=5-16&t=b9lSbNpnNy92yPTH-1)
+## Requirements
+
+### Core Features
+- Parse and load the CSV file
+- Display a **stacked area chart** showing energy over time
+- Add **hover tooltips** with values
+- Make it **responsive** and **styled with Tailwind CSS**
+- Include **time range controls** (zoom, slider, daily/weekly toggles)
+
+### Suggested Libraries
+- [Recharts](https://recharts.org/)
+- [Visx](https://airbnb.io/visx)
+- [D3.js](https://d3js.org/)
+- [ShadCN Area Chart](https://ui.shadcn.com/charts/area)
+
+## Optional Enhancements
+
+- **UX**: Different chart types, filters, improved legends
+- **Performance**: Data downsampling, virtualization
+- **Accessibility**: Keyboard navigation, contrast, alt text
+
+## Time & Submission
+
+- **Time limit:** 4 hours
+- **Submission:** GitHub repo or ZIP
+- **Presentation:** 1-hour walkthrough session
 
 ## Getting Started
 
-To install package dependencies:
-```
+```bash
 npm install
-```
-
-To run the local dev server:
-```
 npm run dev
 ```
 
-The repository provided contains the following pre-installed and configured:
-
-- React
-- TypeScript
+**Tech Stack:**
+- React + TypeScript
 - Tailwind CSS
-- CSS Modules
-- All assets needed for the design in the `/public` folder
-- [IBM UI icons library](https://www.ibm.com/design/language/iconography/ui-icons/library/)
+- Vite
 
-Whilst we have done this to help you dive straight into the assessment, we encourage you to use whatever tooling or stack you feel most comfortable with.
+## Data
 
- If you have any questions or need further clarification, feel free to reach out to us.  Have fun and good luck!
-
-## Instructions
-Please go to the **Assessment** page in the Figma link above. The assessment contains 5 steps, each with an increasing level of complexity. The first step is mandatory; you may choose which (if any) of the optional tasks to complete if you have additional time after completing this step. Please note we are only concerned with the `Card` component. 
-
-**Step 1 (Mandatory)**. Build the `Card` as specified in the design.
-
-**Step 2 (Optional)**.  Add hover and focus states to the `Card` component built in Step 1. Step 2 contains two designs, the first one representing the hover state and the second representing the focus state.
-
-**Step 3 (Optional)**. Observe the **Like** icon with a count at the bottom of the component. Step 3 is to implement a Click interaction such that the like count is incremented by one and the the colour changes to red (per the design). Clicking on it again should decrement the like count and remove the applied colour.
-
-**Step 4 (Optional)**. On clicking the card, it should open [`transitionzero.org`](http://transitionzero.org) in a new tab. (**HINT:** Pay attention to accessibility).
-
-**Step 5 (Optional)**. Per the design, add the gradient to the focus state of the card.
-
-## Submission
-
-Please commit your code and push it to this repo in a new Pull Request.
+[energy_balance.csv](attachment:4927a044-2441-4ffa-8bd9-8031d771e9bc:energy_balance.csv)
