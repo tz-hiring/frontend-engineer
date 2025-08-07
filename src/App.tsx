@@ -1,6 +1,36 @@
+import data from "../data/indonesia-generation.json";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./components/ui/card";
+import { key, chartConfig } from "./constants";
+import { StackedBarChart } from "./components/ui/stacked-bar-chart";
 
 export default function App() {
   return (
-      "Hello world!"
-  )
+    <div className="min-h-screen flex flex-col justify-center items-center container mx-auto">
+      <Card className="w-full shadow-none rounded-md">
+        <CardHeader>
+          <CardTitle>Generation</CardTitle>
+          <CardDescription>
+            Electricity generation by technology from 2023 to 2050
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <StackedBarChart
+            data={data}
+            dataKeys={key}
+            chartConfig={chartConfig}
+          />
+        </CardContent>
+        <CardFooter className="text-xs text-center text-muted-foreground">
+          Data shows projected energy generation mix evolution from 2023 to 2050
+        </CardFooter>
+      </Card>
+    </div>
+  );
 }
