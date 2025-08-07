@@ -1,4 +1,4 @@
-import data from "../data/indonesia-generation.json";
+import data from "../data/indonesia-generation-medium-resolution.json";
 import {
   Card,
   CardContent,

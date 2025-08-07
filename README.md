@@ -1,29 +1,37 @@
 # Frontend Engineering Exercise
 
-You are building a data visualization tool for an energy analyst at TransitionZero. The analyst has exported a large CSV file containing **hourly energy generation data** for the entire year 2030, and they need a web-based interface to explore and visualize this dataset effectively.
+You are building a data visualization tool for an energy analyst at TransitionZero. The analyst has multiple datasets containing **energy generation for Indonesia** from 2023 to 2050, and they need a web-based interface to explore, visualize, and compare these datasets effectively.
 
 **Dataset Overview:**
-- **Rows**: Each row represents a different energy technology/carrier (e.g., Solar, Wind, Gas, Nuclear, Hydro)
-- **Columns**: Each column is a timestamp representing one hour (from January 1st, 2030 00:00 to December 31st, 2030 23:00)
-- **Values**: Each cell contains the energy generation value in Megawatts (MW) for that specific technology at that specific hour
+The application includes two key datasets located in the `/data` directory:
+
+1. **Indonesia Medium Resolution Generation** (`indonesia-generation-medium-resolution.json`):
+   - Contains energy generation values in Megawatts (MW) for various energy technologies under medium resolution scenario
+   - Covers years 2023-2050 with annual data points
+   - Technologies include: Solar, Wind, Gas, Nuclear, Hydro, Coal, Geothermal, and more
+
+2. **Indonesia High Resolution Generation** (`indonesia-generation-high-resolution.json`):
+   - Contains energy generation values in Megawatts (MW) for the same energy technologies under high resolution scenario
+   - Covers the same time period (2023-2050) with annual data points
+   - Has same technologies as medium resolution
 
 **Your Task**: Create a responsive, interactive web application that allows the analyst to:
-- Visualize the data as a stacked area chart showing energy generation over time
-- Interact with the visualization through hover tooltips and time range controls
-- Explore different time periods (daily, weekly, monthly views)
+- Visualize both datasets as stacked area charts showing energy data over time
+- Compare medium vs. high resolution generation scenarios side-by-side, in combined views or any innovative way that might achieve the requirement
+- Interact with the visualizations through hover tooltips and time range controls
+- Explore different time periods and energy technologies
+- Toggle between comparing or not
 
-The focus should be on creating a **clean, performant, and user-friendly interface** that helps the analyst understand energy generation patterns throughout the year.
-
-Data: [generation.csv](attachment:4927a044-2441-4ffa-8bd9-8031d771e9bc:energy_balance.csv)
+The focus should be on creating a **clean, performant, and user-friendly interface** that helps the analyst understand energy patterns and compare medium vs. high resolution generation scenarios across different technologies and time periods.
 
 ## Requirements
 
-You need to build a web app that provides the analyst with features to explore the energy generation dataset. The application should handle the dataset efficiently while maintaining smooth user interactions. The following are required:
+You need to build a web app that provides the analyst with features to explore and compare multiple energy generation scenarios. The application should handle multiple datasets efficiently while maintaining smooth user interactions. The following are required:
 
-1. User should be able to view a responsive stacked area chart rendering the data provided
-2. User should be able to hover over data points to see precise energy generation values (MW) for each technology at specific timestamps
-3. User should be able to filter and show/hide specific energy carriers (Solar, Wind, Gas, Nuclear, etc.)
-4. User should be able to zoom in/out to examine specific time periods in detail or get an overview of longer ranges
+1. User should be able to view responsive stacked area charts rendering any of the dataset provided
+2. User should be able to compare medium vs. high resolution generation data through side-by-side views or combined visualisations
+3. User should be able to hover over data points to see precise energy values (MW) for each technology at specific timestamps
+4. User should be able to filter and show/hide specific energy carriers (Solar, Wind, Gas, Nuclear, etc.)
 
 **What We're Looking For:**
 - Clean, well-structured code
@@ -32,9 +40,9 @@ You need to build a web app that provides the analyst with features to explore t
 
 ## Time & Submission
 
-**Time Limit:** 4 hours
+**Time Limit:** 2 hours
 
-We believe this exercise can be completed within the allocated time, so please do not exceed the time limit. If you find that you cannot complete all requirements within 4 hours, that's also fine - we are very much interested in your thought process, approach to problem-solving, and how you prioritize features. If you find yourself with more time after completing the exercise, feel free to take your solution further and simply document your additions in `docs.md`
+We believe this exercise can be completed within the allocated time, so please do not exceed the time limit. If you find that you cannot complete all requirements within 2 hours, that's also fine - we are very much interested in your thought process, approach to problem-solving, and how you prioritize features. If you find yourself with more time after completing the exercise, feel free to take your solution further and simply document your additions in `docs.md`
 
 **AI Tools & Modern Workflow:**
 We actively encourage the use of AI design and development tools in your workflow. We use them day-to-day and would love to see how you leverage them to improve your development process. Feel free to use tools like:
@@ -53,6 +61,8 @@ You'll be invited to walk through your solution in a 1-hour session where we'll 
 
 ## Setup
 
+The project comes with a basic chart component that you can build upon. The application is set up with a modern React development environment.
+
 ```bash
 npm install
 npm run dev
@@ -62,5 +72,12 @@ npm run dev
 - React + TypeScript
 - Tailwind CSS
 - Vite
+- Recharts (for data visualization)
+- Shadcn/ui components
+
+**Starting Point:**
+You've been provided with a basic stacked area chart component in `src/components/ui/chart.tsx` that you can extend and enhance. The chart currently renders a single dataset - you'll need to modify it to handle multiple datasets and comparison functionality.
+
+**Note:** While the project is set up with React + TypeScript + Vite, feel free to use any tech stack of your choice within the React ecosystem. Feel free to rewrite the application using your preferred framework, libraries, and tools.
 
 
