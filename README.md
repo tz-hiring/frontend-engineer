@@ -18,9 +18,7 @@ The application includes two key datasets located in the `/data` directory:
 **Your Task**: Create a responsive, interactive web application that allows the analyst to:
 - Visualize both datasets as stacked area charts showing energy data over time
 - Compare medium vs. high resolution generation scenarios side-by-side, in combined views or any innovative way that might achieve the requirement
-- Interact with the visualizations through hover tooltips and time range controls
-- Explore different time periods and energy technologies
-- Toggle between comparing or not
+
 
 The focus should be on creating a **clean, performant, and user-friendly interface** that helps the analyst understand energy patterns and compare medium vs. high resolution generation scenarios across different technologies and time periods.
 
@@ -37,6 +35,15 @@ You need to build a web app that provides the analyst with features to explore a
 - Clean, well-structured code
 - Thoughtful UI/UX decisions
 - Performance considerations
+
+
+---
+
+Feel free to take inspiration from [Scenario Builder](https://builder.transitionzero.org/tz/The-Gambia/Current-Policy-scenario-for-The-Gambia?compare=Least-Cost-scenario-for-The-Gambia)
+
+![Scenario Comparison](public/images/scenario-comparison.png)
+*Visual comparison of two generation datasets.*
+
 
 ## Time & Submission
 
