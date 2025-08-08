@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "./components/ui/card";
-import { key, chartConfig } from "./constants";
+import { chartConfig, chartKeys } from "./constants";
 import { StackedBarChart } from "./components/ui/stacked-bar-chart";
 
 export default function App() {
@@ -23,8 +23,8 @@ export default function App() {
         <CardContent>
           <StackedBarChart
             data={data}
-            dataKeys={key}
-            chartConfig={chartConfig}
+            keys={chartKeys}
+            config={chartConfig}
           />
         </CardContent>
         <CardFooter className="text-xs text-center text-muted-foreground">

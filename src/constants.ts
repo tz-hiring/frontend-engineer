@@ -59,7 +59,7 @@ export const chartConfig: ChartConfig = {
   },
 };
 
-export const key = [
+export const chartKeys: (keyof typeof chartConfig)[] = [
   "coal-subcritical",
   "coal-supercritical",
   "coal-ultrasupercritical",

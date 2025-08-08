@@ -7,23 +7,25 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
+import { cn } from "@/lib/utils";
 
-interface StackedBarChartProps {
-  data: any[];
-  dataKeys: string[];
-  chartConfig: any;
-  className?: string;
-  height?: string;
+interface StackedBarChartProps
+  extends Omit<React.ComponentProps<typeof ChartContainer>, "children"> {
+  data: { x: number; [key: string]: number }[];
+  keys: string[];
 }
 
 export function StackedBarChart({
   data,
-  dataKeys,
-  chartConfig,
-  className = "h-[500px] w-full",
+  keys,
+  className,
+  ...props
 }: StackedBarChartProps) {
   return (
-    <ChartContainer config={chartConfig} className={className}>
+    <ChartContainer
+      className={cn("h-[500px] w-full", className)}
+      {...props}
+    >
       <BarChart data={data}>
         <CartesianGrid vertical={false} />
         <XAxis
@@ -40,12 +42,12 @@ export function StackedBarChart({
             <ChartLegendContent className="grid grid-cols-6 font-normal gap-2 mt-6" />
           }
         />
-        {dataKeys.map((dataKey) => (
+        {keys.map((key) => (
           <Bar
-            key={dataKey}
-            dataKey={dataKey}
+            key={key}
+            dataKey={key}
             stackId="a"
-            fill={`var(--color-${dataKey})`}
+            fill={`var(--color-${key})`}
           />
         ))}
       </BarChart>
