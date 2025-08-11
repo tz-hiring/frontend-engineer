@@ -1,54 +1,74 @@
-# Technical Assessment: Card Component Implementation
+# Frontend Engineering Exercise
 
-## Overview
-Welcome to the technical assessment for the  Frontend Engineer (design focus) position. The task is to build a `Card` component based on the Figma design provided. This assessment will test your attention to detail, semantic HTML usage, CSS proficiency, and adherence to best practices.
+You are building a data visualization tool for an energy analyst at TransitionZero. The analyst has multiple datasets containing **energy generation for Indonesia** from 2023 to 2050, and they need a web-based interface to explore, visualize, and compare these datasets effectively.
 
-The repository has been set up with all the assets and tooling you'll need to complete the assessment. 
+**Dataset Overview:**
+The application includes two datasets (`indonesia-generation-medium-resolution.json`, `indonesia-generation-high-resolution.json`) located in the `/data` directory:
+   - Contains energy generation values in Megawatts (MW) for various energy technologies
+   - Covers years 2023-2050 with annual data points
+   - Technologies include: Solar, Wind, Gas, Nuclear, Hydro, Coal, Geothermal, and more
 
- We advise you take the first few minutes to read the instructions and go through the Figma files, especially if you are not very familiar with the tool.
 
- **Time allocated**: 1 hour 30 minutes 
+**Your Task**: Create a responsive, interactive web application that allows the analyst to:
+- Visualize both datasets as stacked area charts showing energy data over time
+- Compare medium vs. high resolution generation scenarios side-by-side, in combined views or any innovative way that might achieve the requirement
 
-**Figma:** [Frontend Engineer Assessment - Design](https://www.figma.com/design/Fe8lmciEWMnjq5Auyg4H9k/FE-Assessment?node-id=5-16&t=b9lSbNpnNy92yPTH-1)
 
-## Getting Started
+## Requirements
 
-To install package dependencies:
-```
+You need to build a web app that provides the analyst with features to explore and compare multiple energy generation scenarios. The application should handle multiple datasets efficiently while maintaining smooth user interactions. The following are required:
+
+1. User should be able to view responsive stacked area charts rendering any of the dataset provided
+2. User should be able to compare medium vs. high resolution generation data through side-by-side views or combined visualisations
+3. User should be able to hover over data points to see precise energy values (MW) for each technology at specific timestamps
+4. User should be able to filter and show/hide specific energy carriers (Solar, Wind, Gas, Nuclear, etc.)
+
+The focus should be on creating a **clean, performant, and user-friendly interface** that helps the analyst understand energy patterns and compare medium vs. high resolution generation scenarios across different technologies and time periods.
+
+---
+
+Feel free to take inspiration from [Scenario Builder](https://builder.transitionzero.org/tz/The-Gambia/Current-Policy-scenario-for-The-Gambia?compare=Least-Cost-scenario-for-The-Gambia)
+
+![Scenario Comparison](public/images/scenario-comparison.png)
+*Visual comparison of two generation datasets.*
+
+
+## Time & Submission
+
+**Time Limit:** 1 hour
+
+We believe this exercise can be completed within the allocated time, so please do not exceed the time limit. If you find that you cannot complete all requirements within 1 hour, that's also fine - we are very much interested in your thought process, approach to problem-solving, and how you prioritize features. If you find yourself with more time after completing the exercise, feel free to take your solution further and simply document your additions in `docs.md`
+
+**AI Tools & Modern Workflow:**
+We actively encourage the use of AI design and development tools in your workflow. We use them day-to-day and would love to see how you leverage them to improve your development process. Feel free to use tools like: [Cursor](https://cursor.so/), [v0.dev](https://v0.dev/), or any other AI tools that help you work more efficiently
+
+**Submission:**
+- Required: GitHub pull request
+- Optional: Document your approach, decisions, and notes in `docs.md`
+- Optional: Deploy to Vercel, Netlify, or similar platform
+
+**Presentation:**
+You'll be invited to walk through your solution in a 1-hour session where we'll discuss your implementation, decisions, and how you used AI tools in your workflow. This task will form the jumping off point for a short code-pairing exercise in your technical interview.
+
+## Setup
+
+The project comes with a basic chart component that you can build upon. The application is set up with a modern React development environment.
+
+```bash
 npm install
-```
-
-To run the local dev server:
-```
 npm run dev
 ```
 
-The repository provided contains the following pre-installed and configured:
-
-- React
-- TypeScript
+**Tech Stack:**
+- React + TypeScript
 - Tailwind CSS
-- CSS Modules
-- All assets needed for the design in the `/public` folder
-- [IBM UI icons library](https://www.ibm.com/design/language/iconography/ui-icons/library/)
+- Vite
+- Recharts (for data visualization)
+- Shadcn/ui components
 
-Whilst we have done this to help you dive straight into the assessment, we encourage you to use whatever tooling or stack you feel most comfortable with.
+**Starting Point:**
+You've been provided with a basic stacked area chart component in `src/components/ui/chart.tsx` that you can extend and enhance. The chart currently renders a single dataset - you'll need to modify it to handle multiple datasets and comparison functionality.
 
- If you have any questions or need further clarification, feel free to reach out to us.  Have fun and good luck!
+**Note:** While the project is set up with React + TypeScript + Vite, feel free to use any tech stack of your choice within the React ecosystem. Feel free to rewrite the application using your preferred framework, libraries, and tools.
 
-## Instructions
-Please go to the **Assessment** page in the Figma link above. The assessment contains 5 steps, each with an increasing level of complexity. The first step is mandatory; you may choose which (if any) of the optional tasks to complete if you have additional time after completing this step. Please note we are only concerned with the `Card` component. 
 
-**Step 1 (Mandatory)**. Build the `Card` as specified in the design.
-
-**Step 2 (Optional)**.  Add hover and focus states to the `Card` component built in Step 1. Step 2 contains two designs, the first one representing the hover state and the second representing the focus state.
-
-**Step 3 (Optional)**. Observe the **Like** icon with a count at the bottom of the component. Step 3 is to implement a Click interaction such that the like count is incremented by one and the the colour changes to red (per the design). Clicking on it again should decrement the like count and remove the applied colour.
-
-**Step 4 (Optional)**. On clicking the card, it should open [`transitionzero.org`](http://transitionzero.org) in a new tab. (**HINT:** Pay attention to accessibility).
-
-**Step 5 (Optional)**. Per the design, add the gradient to the focus state of the card.
-
-## Submission
-
-Please commit your code and push it to this repo in a new Pull Request.
