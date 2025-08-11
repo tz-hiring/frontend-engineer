@@ -48,7 +48,7 @@ We actively encourage the use of AI design and development tools in your workflo
 - Optional: Deploy to Vercel, Netlify, or similar platform
 
 **Presentation:**
-You'll be invited to walk through your solution in a 1-hour session where we'll discuss your implementation, decisions, and how you used AI tools in your workflow.
+You'll be invited to walk through your solution in a 1-hour session where we'll discuss your implementation, decisions, and how you used AI tools in your workflow. This task will form the jumping off point for a short code-pairing exercise in your technical interview.
 
 ## Setup
 
