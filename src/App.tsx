@@ -6,9 +6,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "./components/ui/card";
-import { chartConfig, chartKeys } from "./constants";
-import { StackedBarChart } from "./components/ui/stacked-bar-chart";
+} from "@/components/ui/card";
+import { chartConfig, chartKeys } from "@/constants";
+import { StackedBarChart } from "@/components/ui/stacked-bar-chart";
 
 export default function App() {
   return (
