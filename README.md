@@ -1,6 +1,6 @@
 # Frontend Engineering Exercise
 
-You are building a data visualization tool for an energy analyst at TransitionZero. The analyst has multiple datasets containing **energy generation for Indonesia** from 2023 to 2050, and they need a web-based interface to explore, visualize, and compare these datasets effectively.
+You are building a data visualisation tool for an energy analyst at TransitionZero. The analyst has multiple datasets containing **energy generation for Indonesia** from 2023 to 2050, and they need a web-based interface to explore, visualise, and compare these datasets effectively.
 
 **Mock API:**
 The project includes a mock API server that serves two datasets (`indonesia-generation-medium-resolution.json`, `indonesia-generation-high-resolution.json`) via REST endpoints, allowing for dynamic data loading and filtering capabilities. The dataset:
@@ -39,7 +39,7 @@ Feel free to take inspiration from [Scenario Builder](https://builder.transition
 
 **Time Limit:** 1 hour
 
-We believe this exercise can be completed within the allocated time, so please do not exceed the time limit. If you find that you cannot complete all requirements within 1 hour, that's also fine - we are very much interested in your thought process, approach to problem-solving, and how you prioritize features. If you find yourself with more time after completing the exercise, feel free to take your solution further and simply document your additions in `docs.md`
+We believe this exercise can be completed within the allocated time, so please do not exceed the time limit. If you find that you cannot complete all requirements within 1 hour, that's also fine - we are very much interested in your thought process, approach to problem-solving, and how you prioritize features. If you find yourself with more time after completing the exercise, feel free to take your solution further and simply document your additions in `docs.md`. If you find any requirements unclear, please add them to the document and include any assumptions made. If any requirements are unclear, please note them in the document along with any assumptions you make.
 
 **AI Tools & Modern Workflow:**
 We actively encourage the use of AI design and development tools in your workflow. We use them day-to-day and would love to see how you leverage them to improve your development process. Feel free to use tools like: [Cursor](https://cursor.so/), [v0.dev](https://v0.dev/), or any other AI tools that help you work more efficiently
@@ -48,6 +48,9 @@ We actively encourage the use of AI design and development tools in your workflo
 - Required: GitHub pull request
 - Optional: Document your approach, decisions, and notes in `docs.md`
 - Optional: Deploy to Vercel, Netlify, or similar platform
+
+We encourage good version control practices by making multiple commits with clear, descriptive messages and providing a well-written PR description with your submission.
+
 
 **Presentation:**
 You'll be invited to walk through your solution in a 1-hour session where we'll discuss your implementation, decisions, and how you used AI tools in your workflow. This task will form the jumping off point for a short code-pairing exercise in your technical interview.
@@ -94,12 +97,12 @@ npm run dev:frontend
 - React + TypeScript
 - Tailwind CSS
 - Vite
-- Recharts (for data visualization)
+- Recharts (for data visualisation)
 - Shadcn/ui components
 - Express.js (for mock API)
 
 **Starting Point:**
-You've been provided with a basic stacked area chart component in `src/components/ui/chart.tsx` that you can extend and enhance. The chart currently renders a single dataset - you'll need to modify it to handle multiple datasets and comparison functionality.
+You've been provided with a basic stacked area chart component in `src/components/ui/chart.tsx` that you can extend and enhance. The chart currently renders a single dataset - you'll need to modify it to handle fetch from the API.
 
 **Note:** While the project is set up with React + TypeScript + Vite, feel free to use any tech stack of your choice within the React ecosystem. Feel free to rewrite the application using your preferred framework, libraries, and tools.
 
