@@ -25,23 +25,6 @@ export function YearRangeFilter({
     onEndYearChange(maxYear);
   };
 
-  const handleQuickRange = (range: 'recent' | 'mid' | 'future') => {
-    switch (range) {
-      case 'recent':
-        onStartYearChange(2023);
-        onEndYearChange(2030);
-        break;
-      case 'mid':
-        onStartYearChange(2030);
-        onEndYearChange(2040);
-        break;
-      case 'future':
-        onStartYearChange(2040);
-        onEndYearChange(2050);
-        break;
-    }
-  };
-
   return (
     <Card>
       <CardHeader>
