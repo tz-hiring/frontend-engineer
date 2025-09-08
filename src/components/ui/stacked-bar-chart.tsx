@@ -38,7 +38,7 @@ export function StackedBarChart({
         <ChartTooltip content={<ChartTooltipContent hideLabel />} />
         <ChartLegend
           content={
-            <ChartLegendContent className="grid grid-cols-4 lg:grid-cols-6 font-normal gap-2 mt-6" />
+            <ChartLegendContent className="flex flex-wrap justify-center items-center font-normal gap-3 mt-6" />
           }
         />
         {keys.map((key) => (

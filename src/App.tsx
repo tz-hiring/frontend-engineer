@@ -5,10 +5,13 @@ import { useDatasets, useDatasetComparison } from '@/hooks/useApi';
 import { EnergyTypeFilter } from '@/components/EnergyTypeFilter';
 import { DatasetSelector } from '@/components/DatasetSelector';
 import { ComparisonView } from '@/components/ComparisonView';
+import { YearRangeFilter } from '@/components/YearRangeFilter';
 
 export default function App() {
   const [selectedDatasets, setSelectedDatasets] = useState<string[]>(['indonesia-generation-medium-resolution']);
   const [visibleEnergyTypes, setVisibleEnergyTypes] = useState<string[]>(chartKeys);
+  const [startYear, setStartYear] = useState<number>(2023);
+  const [endYear, setEndYear] = useState<number>(2050);
 
   // Use TanStack Query hooks
   const { data: datasets = [], isLoading: datasetsLoading, error: datasetsError } = useDatasets();
@@ -19,6 +22,8 @@ export default function App() {
     error: dataErrorDetails
   } = useDatasetComparison(selectedDatasets, {
     energyTypes: visibleEnergyTypes,
+    startYear: startYear,
+    endYear: endYear,
   });
 
   const handleDatasetToggle = (datasetId: string) => {
@@ -39,6 +44,22 @@ export default function App() {
         return [...prev, energyType];
       }
     });
+  };
+
+  const handleStartYearChange = (year: number) => {
+    setStartYear(year);
+    // Ensure start year is not after end year
+    if (year > endYear) {
+      setEndYear(year);
+    }
+  };
+
+  const handleEndYearChange = (year: number) => {
+    setEndYear(year);
+    // Ensure end year is not before start year
+    if (year < startYear) {
+      setStartYear(year);
+    }
   };
 
   const getDatasetName = (datasetId: string) => {
@@ -87,7 +108,7 @@ export default function App() {
         </div>
 
         {/* Controls */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           <DatasetSelector
             datasets={datasets}
             selectedDatasets={selectedDatasets}
@@ -98,6 +119,16 @@ export default function App() {
             visibleEnergyTypes={visibleEnergyTypes}
             onEnergyTypeToggle={handleEnergyTypeToggle}
             chartConfig={chartConfig}
+          />
+        </div>
+
+        {/* Year Range Filter */}
+        <div className="mb-8">
+          <YearRangeFilter
+            startYear={startYear}
+            endYear={endYear}
+            onStartYearChange={handleStartYearChange}
+            onEndYearChange={handleEndYearChange}
           />
         </div>
 
